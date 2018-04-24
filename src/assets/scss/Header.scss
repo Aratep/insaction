@@ -1,0 +1,103 @@
+@import "common";
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: {
+    color: #3b3f42;
+  }
+  box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.7);
+  z-index: 3;
+
+  a {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+.logo {
+  width: 95px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    float: left;
+    padding: {
+      left: 35px;
+    }
+    transition: all 0.2s;
+  }
+
+  .active_line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #56b9d0;
+  }
+
+  .active {
+    color: #ffffff;
+  }
+
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: #b0b0b0;
+    text-decoration: none;
+
+    font: {
+      size: 15px;
+    }
+
+    transition: {
+      duration: 0.2s;
+      property: all;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 auto auto;
+
+  li {
+    float: left;
+    line-height: 60px;
+    color: #6d7072;
+    padding: {
+      left: 5px;
+    }
+  }
+
+  font: {
+    size: 15px;
+  }
+
+  a {
+    display: block;
+    line-height: 60px;
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: {
+      duration: 0.2s;
+      property: all;
+    }
+  }
+}
+
+.photo-span {
+  margin-left: 30px;
+}

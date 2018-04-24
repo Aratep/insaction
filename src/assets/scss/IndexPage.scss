@@ -1,0 +1,49 @@
+@import 'common';
+@import "middle";
+@import "content";
+
+.index_page {
+  width: 100%;  
+  display: grid;
+  grid-template-rows: 800px 1fr;
+}
+
+.shield-div {
+  float: right;
+  margin-right:-280px;
+}
+
+.shield {
+  height: 40px;
+}
+
+.count-div {
+  float: left;
+  margin-left: 16px;
+}
+
+.count {
+  color: white;
+  font-size: 31px;
+}
+
+.card-img {
+  width: 365.33px;
+  height: 292.25px;
+}
+
+.container {
+  position: absolute;
+  top: 20px;
+}
+
+.price-div {
+  float:right;
+}
+.price {
+  font-size: 23px;
+  font-weight: 600;
+}
+.grn {
+  color: grey;
+}

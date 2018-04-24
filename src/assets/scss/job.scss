@@ -1,0 +1,241 @@
+.job {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  width: 960px;
+  background: #3b3f42;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 4;
+  transition: all 0.3s;
+  color: white;
+  .plus, .nitro, .minus {
+    float: left;
+    color: black;
+    text-align: center;
+
+  }
+
+  .plus {
+    background-color: #aebdbb;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .minus {
+    background-color: #bbacae;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .nitro {
+    background-color: #d1cfcf;
+  }
+
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-div {
+  height: 365px;
+  width: 535px;
+  margin-left: 32px;
+  margin-top: 23px;
+  margin-bottom: 20px;
+  margin-right: 23px;
+}
+
+.after-slider {
+  margin-left: 32px;
+  margin-bottom: 20px;
+}
+
+.margin-left {
+  margin-left: 80px;
+}
+
+.radios {
+  margin-bottom: 9px;
+}
+
+.link {
+  color: #108AEC;
+  text-decoration: none;
+}
+
+.slick-prev {
+  left: 0;
+  height: 100%;
+  z-index: 5555;
+  width: 50px;
+  background: url('../img/prev.png');
+}
+
+.slick-next {
+  right: 0;
+  height: 100%;
+  z-index: 5555;
+  width: 50px;
+  background-image: url('../img/next.png');
+}
+
+.safe-text-size {
+  font-size: 15px;
+}
+.block {
+  display: block;
+  margin-top: -4px;
+}
+
+.slick-dots {
+  bottom: -8px;
+  margin: 0;
+  position: absolute;
+  width: 35% !important;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 1;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border-radius: 36px;
+  border: 1px solid white;
+  background: transparent;
+}
+
+.slick-active {
+  color: red
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 0 !important;
+  opacity: 0 !important;
+}
+
+.safe-text {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+
+.rewievs {
+  height: 35px;
+}
+
+.rewiev {
+  height: 35px;
+  width: 145px;
+}
+
+.cou {
+  font-weight: 600;
+}
+
+.right-block {
+  float: left;
+  margin-top: 30px;
+  width: 40%;
+  position: relative;
+}
+
+.left-block {
+  float: left;
+  width: 60%;
+}
+
+.heading-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fefefe;
+}
+.heading{
+  margin-bottom: 15px;
+}
+.job-description {
+  height: 155px;
+}
+.text-field {
+  width:352px;
+  height:170px;
+  margin-bottom: 5px;
+}
+.field-custom {
+  background: #ffffff;
+  height: 100%;
+}
+
+.mdc-text-field--textarea .mdc-floating-label{
+  margin-top: -10px;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+.pr, .people {
+  float: left;
+  height: 40px;
+  color: black;
+  text-align: center;
+}
+.people {
+  width: 214px;
+  background: floralwhite;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pr {
+  width: 140px;
+  background: #fbba42;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.people span, .pr span {
+  position: relative;
+  top: 25%;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.buttons {
+  height: 35px;
+  width: 153px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.button-group {
+  position: absolute;
+  bottom: -120px;
+  right: 25px;
+}
+.cancel {
+  background: transparent !important;
+  color: white !important;
+  float: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.send {
+  background: #fbba42 !important;
+  color: black !important;
+}
+.job .mdc-text-field__input {
+  color: #828284 !important;
+  padding: 2px 10px !important;
+  font-size: 16px !important;
+}
+.field-custom textarea::placeholder {
+  color:  #828284 !important;
+  font-size: 16px !important;
+}

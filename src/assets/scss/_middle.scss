@@ -1,0 +1,138 @@
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  transition: {
+    property: all;
+    duration: 0.5s;
+  }
+
+  background: {
+    color: #52606a;
+  }
+
+  .figures {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+
+    img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      animation: fly 3s infinite cubic-bezier(0.42, 0, 0.58, 1);
+    }
+  }
+
+  .figures:nth-child(1) {
+    top: 190px;
+    left: 5%;
+
+    @for $i from 1 through 3 {
+      img:nth-child(#{$i}) {
+        animation-delay: random(3000) + ms;
+      }
+    }
+
+    img:nth-child(1) {
+      top: 140px;
+      left: 70px;
+    }
+
+    img:nth-child(2) {
+      top: 80px;
+    }
+
+    img:nth-child(3) {
+      top: 20px;
+      left: 30px;
+      // transform: rotate(-45deg)
+    }
+  }
+
+  .figures:nth-child(2) {
+    top: 500px;
+    left: 27%;
+
+    filter: blur(3px);
+
+    @for $i from 1 through 3 {
+      img:nth-child(#{$i}) {
+        animation-delay: random(1000) + ms;
+      }
+    }
+
+    img:nth-child(1) {
+      top: 60px;
+      left: 50px;
+    }
+
+    img:nth-child(2) {
+      top: 60px;
+    }
+  }
+
+  .figures:nth-child(3) {
+    top: 50px;
+    left: 35%;
+
+    filter: blur(4px);
+
+    @for $i from 1 through 3 {
+      img:nth-child(#{$i}) {
+        animation-delay: random(1000) + ms;
+      }
+    }
+
+    img:nth-child(1) {
+      top: 20px;
+      left: 20px;
+    }
+
+    img:nth-child(2) {
+      top: 80px;
+      left: 80px;
+    }
+  }
+
+  .figures:nth-child(4) {
+    top: 450px;
+    left: 70%;
+
+    @for $i from 1 through 3 {
+      img:nth-child(#{$i}) {
+        animation-delay: random(1000) + ms;
+      }
+    }
+
+    img:nth-child(1) {
+      top: 60px;
+      left: 60px;
+    }
+  }
+
+  .figures:nth-child(5) {
+    top: 130px;
+    left: 72%;
+
+    @for $i from 1 through 3 {
+      img:nth-child(#{$i}) {
+        animation-delay: random(1000) + ms;
+      }
+    }
+
+    img:nth-child(2) {
+      top: 50px;
+    }
+  }
+
+  @keyframes fly {
+    50% {
+      transform: translateY(6%);
+    }
+  }
+
+  @import "search";
+}

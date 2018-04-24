@@ -1,0 +1,20 @@
+@import 'common';
+@import "registration";
+@import "auth";
+
+.grid {
+  display: grid;
+  width: 100%;  
+  grid-template-rows: 60px 1fr 186px;
+  height:100%
+}
+
+.wrapper {
+  width: 1280px;
+}
+
+.modals {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

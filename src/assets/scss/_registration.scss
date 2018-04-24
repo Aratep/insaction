@@ -1,0 +1,31 @@
+.registration {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  background: #3b3f42;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  transition: all 0.3s;
+
+  .auth_field:first-child {
+    margin-top: 0;
+  }
+
+  .mdc-button--raised {
+    height: 44px;
+  }
+}
+
+.registration_fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: {
+    top: 40px;
+    bottom: 40px;
+  }
+}
