@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "insaction",
+=======
+  "name": "web-app",
+>>>>>>> d07979924de41054352018c91e082091a73de1b0
   "version": "0.1.0",
   "private": true,
   "dependencies": {
